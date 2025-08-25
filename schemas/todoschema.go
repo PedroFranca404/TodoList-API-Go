@@ -6,5 +6,5 @@ import (
 
 type Todo struct {
 	gorm.Model
-	text string
+	Text string
 }
