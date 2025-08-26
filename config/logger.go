@@ -51,6 +51,6 @@ func (l *Logger) Infof(p string, v ...interface{}) {
 func (l *Logger) Warnf(p string, v ...interface{}) {
 	l.warning.Printf(p, v...)
 }
-func (l *Logger) Errf(p string, v ...interface{}) {
+func (l *Logger) Errorf(p string, v ...interface{}) {
 	l.err.Printf(p, v...)
 }
