@@ -10,7 +10,7 @@ func initRoutes(router *gin.Engine) {
 	v1 := router.Group("/api/v1")
 	{
 		v1.POST("/todo", handler.CreateTodoHandler)
-		v1.GET("/todo")
+		v1.GET("/todo", handler.ShowTodoHandler)
 		v1.PUT("/todo", handler.UpdateTodoHandler)
 		v1.DELETE("/todo", handler.DeleteTodoHandler)
 		v1.GET("/todos")
