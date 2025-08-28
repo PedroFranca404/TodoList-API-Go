@@ -17,3 +17,15 @@ func (r *CreateTodoRequest) Validate() error {
 	}
 	return nil
 }
+
+// CreateTodo
+type UpdateTodoRequest struct {
+	Text string `json:"text"`
+}
+
+func (r *UpdateTodoRequest) Validate() error {
+	if r.Text == "" {
+		return errParamIsRequired("text", "string")
+	}
+	return nil
+}
